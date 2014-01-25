@@ -1,0 +1,6 @@
+[submodule "GalleryView"]
+	path = GalleryView
+	url = https://github.com/jackwanders/GalleryView.git
+[submodule "Snowstorm"]
+	path = Snowstorm
+	url = https://github.com/scottschiller/Snowstorm.git

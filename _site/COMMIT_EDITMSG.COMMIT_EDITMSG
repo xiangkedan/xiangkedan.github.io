@@ -1,0 +1,110 @@
+add baseurl
+
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/_config.yml b/_config.yml
+index 008eb10..2b1e2d0 100644
+--- a/_config.yml
++++ b/_config.yml
+@@ -1,3 +1,4 @@
+ safe: true
+ lsi: false
+ pygments: true
++baseurl: /kjudy
+diff --git a/_layouts/base.html b/_layouts/base.html
+index 84b30ae..e079203 100644
+--- a/_layouts/base.html
++++ b/_layouts/base.html
+@@ -10,29 +10,28 @@
+         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+-        <script src="/GalleryView/js/jquery.timers-1.2.js"></script>
+-        <script src="/GalleryView/js/jquery.easing.1.3.js"></script>
+-          <script src="/GalleryView/js/jquery.galleryview-3.0-dev.js"></script> 
++        <script src="{{ baseurl }}/GalleryView/js/jquery.timers-1.2.js"></script>
++        <script src="{{ baseurl }}/GalleryView/js/jquery.easing.1.3.js"></script>
++          <script src="{{ baseurl }}/GalleryView/js/jquery.galleryview-3.0-dev.js"></script> 
+       
+-        <link rel="stylesheet" href="/assets/css/normalize.css">
+-        <link rel="stylesheet" href="/assets/css/main.css">
++        <link rel="stylesheet" href="{{ baseurl }}/assets/css/normalize.css">
++        <link rel="stylesheet" href="{{ baseurl }}/assets/css/main.css">
+        
+-        <link rel="stylesheet" href="/GalleryView/css/jquery.galleryview-3.0-dev.css">     
+-        <script src="/assets/js/vendor/modernizr-2.7.1.min.js"></script>
++        <link rel="stylesheet" href="{{ baseurl }}/GalleryView/css/jquery.galleryview-3.0-dev.css">     
++        <script src="{{ baseurl }}/assets/js/vendor/modernizr-2.7.1.min.js"></script>
+       
+-        <script src="/photobox/photobox.js"></script>
+-        <script src='/assets/js/snowstorm-min.js'></script> 
++        <script src='{{ baseurl }}/assets/js/snowstorm-min.js'></script> 
+ 　　　
+     </head>
+     <body>
+         <header>
+ 
+-            <h1 class="tittle"><a href="/">丹丹的小窝</a></h1>
++            <h1 class="tittle"><a href="{{ baseurl }}">丹丹的小窝</a></h1>
+          <nav>
+             <ul>
+-                <li><a href="/">首页</a></li>
+-                <li><a href="/photos.html">我的照片</a></li>
+-                <li><a href="/archive.html">开心的事</a></li>
++                <li><a href="{{ baseurl }}">首页</a></li>
++                <li><a href="{{ baseurl }}/photos.html">我的照片</a></li>
++                <li><a href="{{ baseurl }}/archive.html">开心的事</a></li>
+             </ul>
+         </nav>
+          </header>
+@@ -47,8 +46,8 @@
+ 
+     
+        
+-        <script src="/assets/js/plugins.js"></script>
+-        <script src="/assets/js/main.js"></script>
++        <script src="{{ baseurl }}/assets/js/plugins.js"></script>
++        <script src="{{ baseurl }}/assets/js/main.js"></script>
+ 
+         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+         <script>
+diff --git a/index.html b/index.html
+index e6b7cf5..b05c3fe 100644
+--- a/index.html
++++ b/index.html
+@@ -15,19 +15,19 @@ title: 丹丹的小窝
+ <div id="content">
+ 
+ <ul id="myGallery">
+-	<li><img src="/assets/media/img2.jpg" /></li>
+-	<li><img src="/assets/media/img3.jpg" alt="img3"></li>
+-	<li><img src="/assets/media/img4.jpg" alt=""></li>
+-	<li><img src="/assets/media/img5.jpg" alt=""></li>
+-	<li><img src="/assets/media/img6.jpg" alt=""></li>
+-	<li><img src="/assets/media/img7.jpg" alt=""></li>
+-	<li><img src="/assets/media/img8.jpg" alt=""></li>
+-	<li><img src="/assets/media/img9.jpg" alt=""></li>
+-	<li><img src="/assets/media/img10.jpg" alt=""></li>
+-	<li><img src="/assets/media/img11.jpg" alt=""></li>
+-	<li><img src="/assets/media/img12.jpg" alt=""></li>
+-	<li><img src="/assets/media/img13.jpg" alt=""></li>
+-	<li><img src="/assets/media/img14.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img2.jpg" /></li>
++	<li><img src="{{ baseurl }}/assets/media/img3.jpg" alt="img3"></li>
++	<li><img src="{{ baseurl }}/assets/media/img4.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img5.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img6.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img7.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img8.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img9.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img10.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img11.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img12.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img13.jpg" alt=""></li>
++	<li><img src="{{ baseurl }}/assets/media/img14.jpg" alt=""></li>
+ </ul>
+ <div id="lyric">
+ 	<h2>送给聪明善良的美女丹丹</h2>
