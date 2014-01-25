@@ -110,7 +110,8 @@ h1.tittle{
     width:70%; 
     background-image: url('/kjudy/assets/media/bg.gif');
     background-repeat: repeat;
-    min-height:700px
+    min-height:700px;
+    padding:5px 25px;
 
 }
 .gv_galleryWrap{

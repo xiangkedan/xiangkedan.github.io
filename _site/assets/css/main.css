@@ -108,9 +108,10 @@ h1.tittle{
 #content{
     margin: 2px auto auto;
     width:70%; 
-    background-image: url('/assets/media/bg.gif');
+    background-image: url('/kjudy/assets/media/bg.gif');
     background-repeat: repeat;
-    min-height:700px
+    min-height:700px;
+    padding:5px 25px;
 
 }
 .gv_galleryWrap{
@@ -131,7 +132,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    background-image:url('/assets/media/nav.gif');
+    background-image:url('/kjudy/assets/media/nav.gif');
     background-repeat: repeat;
 }
 #lyric{
