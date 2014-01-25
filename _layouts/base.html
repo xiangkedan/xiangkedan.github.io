@@ -10,29 +10,28 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-        <script src="/GalleryView/js/jquery.timers-1.2.js"></script>
-        <script src="/GalleryView/js/jquery.easing.1.3.js"></script>
-          <script src="/GalleryView/js/jquery.galleryview-3.0-dev.js"></script> 
+        <script src="{{ baseurl }}/GalleryView/js/jquery.timers-1.2.js"></script>
+        <script src="{{ baseurl }}/GalleryView/js/jquery.easing.1.3.js"></script>
+          <script src="{{ baseurl }}/GalleryView/js/jquery.galleryview-3.0-dev.js"></script> 
       
-        <link rel="stylesheet" href="/assets/css/normalize.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="{{ baseurl }}/assets/css/normalize.css">
+        <link rel="stylesheet" href="{{ baseurl }}/assets/css/main.css">
        
-        <link rel="stylesheet" href="/GalleryView/css/jquery.galleryview-3.0-dev.css">     
-        <script src="/assets/js/vendor/modernizr-2.7.1.min.js"></script>
+        <link rel="stylesheet" href="{{ baseurl }}/GalleryView/css/jquery.galleryview-3.0-dev.css">     
+        <script src="{{ baseurl }}/assets/js/vendor/modernizr-2.7.1.min.js"></script>
       
-        <script src="/photobox/photobox.js"></script>
-        <script src='/assets/js/snowstorm-min.js'></script> 
+        <script src='{{ baseurl }}/assets/js/snowstorm-min.js'></script> 
 　　　
     </head>
     <body>
         <header>
 
-            <h1 class="tittle"><a href="/">丹丹的小窝</a></h1>
+            <h1 class="tittle"><a href="{{ baseurl }}">丹丹的小窝</a></h1>
          <nav>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/photos.html">我的照片</a></li>
-                <li><a href="/archive.html">开心的事</a></li>
+                <li><a href="{{ baseurl }}">首页</a></li>
+                <li><a href="{{ baseurl }}/photos.html">我的照片</a></li>
+                <li><a href="{{ baseurl }}/archive.html">开心的事</a></li>
             </ul>
         </nav>
          </header>
@@ -47,8 +46,8 @@
 
     
        
-        <script src="/assets/js/plugins.js"></script>
-        <script src="/assets/js/main.js"></script>
+        <script src="{{ baseurl }}/assets/js/plugins.js"></script>
+        <script src="{{ baseurl }}/assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
